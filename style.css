@@ -1,0 +1,43 @@
+body {
+    background: radial-gradient(circle at center, #fdfaf4 0%, #f0e9df 50%, #e5dbd0 100%);
+}
+
+.cabecalho {
+    padding: 1.5rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto; 
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.conteudo-principal .titulo {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.conteudo-principal .descricao-pagina{
+    font-family: "Lustria", serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cartas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape {
+    text-align: center;
+    padding: 1rem;
+}

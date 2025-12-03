@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Cartas Baralho - Aprenda a jogar Truco!</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header class="cabecalho" id="cabecalho">
-        <nav class="logo">
-            <img src="./images/logo.png" alt="Logo" id="logo">
-        </nav>
+        <img src="./images/logo.png" alt="Logo" class="logo" id="logo">
     </header>
 
     <main class="conteudo-principal">
         <section>
             <h1 class="titulo" id="titulo">Gerador de Cartas do Truco</h1>
-            <p class="descricao-pagina" id="descricao-pagina">Gere uma carta aleatória e veja a descrição detalhada do seu poder no truco. Uma ferramenta rápida, visual e perfeita para players que querem evoluir no jogo.</p>
+            <p class="descricao-pagina" id="descricao-pagina">Gere uma carta aleatória e veja a descrição detalhada do
+                seu poder no truco. <br> Uma ferramenta rápida, visual e perfeita para players que querem evoluir no jogo.
+            </p>
         </section>
 
-        <div>
-            <img id="carta" src="" alt="Carta"> 
+        <div class="cartas">
+            <img id="carta" src="" alt="Carta">
             <br>
             <br>
             <button id="botao">CLIQUE E GERE SUA CARTA</button>
         </div>
     </main>
 
-    <footer>
-        <p class="rodape" id="rodape">Feito por Luana Letéia</p>
+    <footer class="rodape" id="rodape">
+        <p>Feito por Luana Letéia</p>
     </footer>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
