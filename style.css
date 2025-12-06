@@ -23,13 +23,14 @@ body {
     font-family: "Jersey 10", sans-serif;
     font-size: 5rem;
     margin-bottom: 3rem;
-    letter-spacing: 9px;
+    letter-spacing: 10px;
 }
 
 .conteudo-principal .descricao-pagina{
     font-family: "Lustria", serif;
     font-size: 1.5rem;
     margin-bottom: 3rem;
+    letter-spacing: 2px;
 }
 
 .cartas {
@@ -58,17 +59,21 @@ body {
 
 .rodape {
     font-family: "Lustria", serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-     display: flex;
+    font-size: 1.2rem;
+    color: #4a3a2a; 
+    
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    letter-spacing: 2px;
-}
+    gap: 12px;
 
+    padding: 1.5rem 0;
+    opacity: 0.8;
+}
 .rodape a img {
-    width: 30px;
-    height: auto;
-    margin: 0 10px;
+    width: 24px;
+    transition: transform 0.2s ease;
+}
+.rodape a img:hover {
+    transform: scale(1.15);
 }
