@@ -37,7 +37,25 @@ body {
     flex-direction: column;
 }
 
+.cartas .botao {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #c4a484;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cartas .botao:hover {
+    background-color: #a67c52;
+}
+
 .rodape {
+    font-family: "Lustria", serif;
     text-align: center;
     padding: 1rem;
 }
