@@ -39,11 +39,27 @@ body {
     flex-direction: column;
 }
 
+.cartas img {
+    width: 220px;
+    margin-bottom: 1rem;
+}
+
+/* NOVO — ESTILO DA DESCRIÇÃO DA CARTA */
+.descricao-carta {
+    font-family: "Lustria", serif;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
 .cartas .botao {
     font-family: "Jersey 10", sans-serif;
     font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     cursor: pointer;
     border: none;
     background-color: #c4a484;

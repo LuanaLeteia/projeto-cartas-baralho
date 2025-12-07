@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -26,15 +26,18 @@
     <main class="conteudo-principal">
         <section>
             <h1 class="titulo" id="titulo">Gerador de Cartas do Truco</h1>
-            <p class="descricao-pagina" id="descricao-pagina">Gere uma carta aleatória e veja a descrição detalhada do
-                seu poder no truco. <br> Uma ferramenta rápida, visual e perfeita para players que querem evoluir no jogo.
+            <p class="descricao-pagina" id="descricao-pagina">
+                Gere uma carta aleatória e veja a descrição detalhada do seu poder no truco.
+                <br>Uma ferramenta rápida, visual e perfeita para players que querem evoluir no jogo.
             </p>
         </section>
 
         <div class="cartas">
             <img id="carta" src="" alt="Carta">
-            <br>
-            <br>
+
+            <!-- AQUI EXIBE A DESCRIÇÃO 🎯 -->
+            <p id="descricao-carta" class="descricao-carta"></p>
+
             <button class="botao" id="botao">CLIQUE E GERE SUA CARTA</button>
         </div>
     </main>
@@ -42,9 +45,13 @@
     <footer class="rodape" id="rodape">
         <p>Feito por Luana Letéia</p>
 
-        <a href="https://www.linkedin.com/in/luanaleteia/" target="_blank"><img src="./images/linkedin.svg" alt="Linkedin"></a>
+        <a href="https://www.linkedin.com/in/luanaleteia/" target="_blank">
+            <img src="./images/linkedin.svg" alt="Linkedin">
+        </a>
 
-        <a href="https://www.instagram.com/luanaleteia" target="_blank"><img src="./images/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.instagram.com/luanaleteia" target="_blank">
+            <img src="./images/instagram.svg" alt="Instagram">
+        </a>
     </footer>
 
     <script src="./index.js"></script>
