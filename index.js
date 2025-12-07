@@ -2,7 +2,6 @@ document.getElementById('botao').addEventListener('click', () => {
     tirarUmaCartaDoBaralho()
 })
 
-// Tabela com as descrições do Truco
 const descricoesTruco = {
     "AS": "A melhor carta do truco! Ganha de todas as outras cartas.",
     "KS": "Carta muito forte, perdendo somente para o Zap.",
@@ -17,18 +16,15 @@ const descricoesTruco = {
     "4S": "Carta fraca."
 }
 
-// Adaptado para todos os naipes
 function obterDescricao(codigoCarta) {
-    const valor = codigoCarta.slice(0, -1)  // exemplo: "7" ou "A"
-    const naipe = codigoCarta.slice(-1)     // "S", "H", "D", "C"
+    const valor = codigoCarta.slice(0, -1)
+    const naipe = codigoCarta.slice(-1)
 
-    // Manilhas clássicas do truco paulista
     if (valor === "4" && naipe === "C") return "Zap (4 de paus). A carta mais forte do truco!";
     if (valor === "7" && naipe === "H") return "Sete de copas. Segunda carta mais forte do truco!";
     if (valor === "A" && naipe === "S") return "Espadilha (Ás de espadas). Terceira carta mais forte!";
     if (valor === "7" && naipe === "D") return "Sete de ouros. Quarta carta mais forte!";
 
-    // Pega descrições básicas
     return descricoesTruco[valor + naipe] || "Carta comum, usada em jogadas de apoio.";
 }
 
@@ -51,10 +47,8 @@ async function tirarUmaCartaDoBaralho(){
     const imagemCarta = carta.cards[0].image
     const codigoCarta = carta.cards[0].code  
 
-    // Mostra a imagem
     document.getElementById('carta').src = imagemCarta
 
-    // Mostra a descrição baseada no código
     document.getElementById('descricao-carta').textContent = obterDescricao(codigoCarta)
 }
 
